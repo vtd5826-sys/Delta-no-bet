@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delta No Secret</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
+        *, *::before, *::after { box-sizing: border-box; }
         body {
             margin: 0;
             padding: 0;
@@ -56,24 +54,23 @@
             font-weight: 800;
             text-transform: uppercase;
         }
-        .download-btn {
-            display: inline-block;
+        .btn {
+            display: block;
+            width: 100%;
             background-color: #6c5ce7;
             color: white;
             font-size: 1.1rem;
             font-weight: 600;
-            padding: 14px 32px;
+            padding: 14px 20px;
             border-radius: 50px;
             text-decoration: none;
             box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
+            margin: 15px 0;
+            transition: all 0.3s ease;
         }
-        .download-btn:hover {
+        .btn:hover {
             background-color: #5b4bc4;
-        }
-        .note {
-            margin-top: 20px;
-            font-size: 0.85rem;
-            color: #665c7a;
+            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -81,8 +78,16 @@
     <div class="diagonal-stripes"></div>
     <div class="container">
         <h1>delta no secret</h1>
-        <a href="itms-services://?action=download-manifest&url=https://delta.bz/manifest.plist" class="download-btn">Tải xuống ngay</a>
-        <div class="note">Nhấn vào nút trên để bắt đầu cài đặt ứng dụng trên thiết bị iOS của bạn.</div>
+        
+        <!-- Nút 1 -->
+        <a href="itms-services://?action=download-manifest&url=https://delta.bz/manifest.plist" class="btn">
+            delta link 1 [free]
+        </a>
+        
+        <!-- Nút 2 -->
+        <a href="itms-services://?action=download-manifest&url=https://delta.bz/manifest.plist" class="btn">
+            delta link 2 [free]
+        </a>
     </div>
 </body>
 </html>
